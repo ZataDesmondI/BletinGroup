@@ -392,6 +392,36 @@ header.header-fixed .mainmenu-container ul li {
 header.header-fixed .logo {
     margin: 5px 0;
 }
+
+
+/* ================= LOGO IMAGE FIX ================= */
+
+header .logo a {
+    display: block;
+}
+
+header .logo img {
+    display: block;
+    max-height: 65px;      /* controls logo size */
+    width: auto;
+}
+
+/* Align logo vertically with menu */
+header .logo {
+    height: 105px;
+    display: flex;
+    align-items: center;
+}
+
+/* Sticky header logo */
+header.header-fixed .logo {
+    height: 75px;
+}
+
+header.header-fixed .logo img {
+    max-height: 50px;
+}
+
 /**
 * Navigation Dropdown Styles.
 **/
