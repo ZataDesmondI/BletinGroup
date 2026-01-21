@@ -271,89 +271,54 @@ p {
     /*border-right: 1px solid #073D51;*/
 }
 /**
-* Header Styles
+* Header Styles.
 **/
 
 header {
     background: #fff;
     position: relative;
+    -webkit-transition: all .3s ease;
     transition: all .3s ease;
-    z-index: 999;
 }
-
-/* ================= LOGO ================= */
 header .logo {
     margin: 20px 0;
-    line-height: 105px;
+    -webkit-transition: all .3s ease;
     transition: all .3s ease;
-    position: relative;
-    z-index: 3000;
 }
-
-header .logo .logo-text {
-    display: inline-block;
-    font-size: 26px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #ffffff;              /* FIX: visible on header-curvy */
-    font-family: 'Segoe UI', Arial, sans-serif;
-    text-decoration: none;
-}
-
-header .logo .logo-text span {
-    color: #F69C00;               /* brand highlight */
-}
-
-/* ================= MENU ================= */
 header .mainmenu-container ul {
     text-align: right;
     display: inline-block;
 }
-
 header .mainmenu-container ul li {
     display: inline-block;
     line-height: 105px;
+    -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
-
 header .mainmenu-container ul li a {
     display: inline-block;
-    font-size: 7px;
-    color: #280cb3;
+    font-size: 14px;
+    color: #515050;
     font-weight: 700;
     text-transform: uppercase;
     padding: 0 12px;
     position: relative;
-    text-decoration: none;
+    vertical-align: bottom;
 }
-
 header .mainmenu-container > ul > li.current > a,
 header .mainmenu-container ul li a:hover {
     color: #F69C00;
 }
-
 header .mainmenu-container ul li a:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 30px;
-    width: 0;
     height: 4px;
-    background: transparent;
-    transition: width .3s ease;
+    background: #F69C00;
 }
-
-header .mainmenu-container ul li.current a:before,
-header .mainmenu-container ul li a:hover:before {
-    width: 100%;
+header .mainmenu-container ul li.current a:before {
+    right: 0;
 }
-
-/* ================= ICONS ================= */
 header .mainmenu-container ul li.top-icons a {
     padding: 0 5px;
 }
-
 header .mainmenu-container ul li.top-icons a i {
     color: #31AFE2;
     font-size: 16px;
@@ -361,42 +326,72 @@ header .mainmenu-container ul li.top-icons a i {
     padding: 10px;
     border-radius: 50%;
     transition: all .3s ease;
-}
 
+}
 header .mainmenu-container ul li.top-icons:hover a i {
     border-color: #F69C00;
     color: #F69C00;
 }
-
-/* ================= STICKY HEADER ================= */
+header .search-box {
+    background: #F69C00;
+    padding: 10px 0;
+    display: none;
+}
+header .search-box form {
+    background: #fff;
+    border: 1px solid #fff;
+    height: 35px;
+    padding: 0px 10px;
+    line-height: 35px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+header .search-box form input {
+    width: 87%;
+    background: none;
+    border: none;
+    outline: none;
+}
+header .search-box form button {
+    background: none;
+    color: #E3960A;
+    outline: none;
+    border: none;
+}
+header .cart-box {
+    background: #51B7E3;
+    padding: 10px 0;
+    display: none;
+}
+header .cart-box p {
+    color: #fff;
+    font-size: 15px;
+    text-align: right;
+    margin-bottom: 0;
+}
+header .cart-box .icon {
+    font-size: 18px;
+}
+header .cart-box span {
+    color: #F69C00;
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
 .header-fixed {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #fff;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.15);
+    z-index: 99999;
+    box-shadow: 0 3px 5px rgba(81, 183, 227, .2);
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
-
-header.header-fixed .logo {
-    margin: 5px 0;
-    line-height: 75px;
-}
-
-header.header-fixed .logo .logo-text {
-    font-size: 20px;
-    color: #0a58ca;              /* FIX: visible on white bg */
-}
-
-header.header-fixed .logo .logo-text span {
-    color: #F69C00;
-}
-
 header.header-fixed .mainmenu-container ul li {
     line-height: 75px;
 }
-
-
-
+header.header-fixed .logo {
+    margin: 5px 0;
+}
 /**
 * Navigation Dropdown Styles.
 **/
