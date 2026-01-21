@@ -287,7 +287,7 @@ header .logo {
     line-height: 105px;
     transition: all .3s ease;
     position: relative;
-    z-index: 1000;
+    z-index: 3000;
 }
 
 header .logo .logo-text {
@@ -319,8 +319,8 @@ header .mainmenu-container ul li {
 
 header .mainmenu-container ul li a {
     display: inline-block;
-    font-size: 14px;
-    color: #ffffff;
+    font-size: 7px;
+    color: #280cb3;
     font-weight: 700;
     text-transform: uppercase;
     padding: 0 12px;
@@ -340,7 +340,7 @@ header .mainmenu-container ul li a:before {
     bottom: 30px;
     width: 0;
     height: 4px;
-    background: #F69C00;
+    background: transparent;
     transition: width .3s ease;
 }
 
