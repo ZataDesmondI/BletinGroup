@@ -393,22 +393,34 @@ header.header-fixed .logo {
     margin: 5px 0;
 }
 
+header .logo {
+  margin: 20px 0;
+  line-height: 105px;
+}
+
+header.header-fixed .logo {
+  margin: 5px 0;
+  line-height: 75px;
+}
 
 header .logo .logo-text {
   font-size: 24px;
   font-weight: 800;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #0a58ca;   /* match your theme */
+  color: #0a58ca;
   font-family: 'Segoe UI', Arial, sans-serif;
   text-decoration: none;
-  display: inline-block;
-  line-height: 1;
 }
 
-header .logo .logo-text:hover {
-  color: #084298;
+header .logo .logo-text span {
+  color: #515050;
 }
+
+header.header-fixed .logo .logo-text {
+  font-size: 20px;
+}
+
 
 
 /**
