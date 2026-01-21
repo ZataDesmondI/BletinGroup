@@ -396,15 +396,20 @@ header.header-fixed .logo {
 
 /* ================= LOGO IMAGE FIX ================= */
 
-header .logo a {
+/* LOGO FIX */
+header .logo {
+    display: flex;
+    align-items: center;
+    height: 80px; /* header height */
+}
+
+header .logo img,
+.mylogo {
+    max-height: 50px;   /* control logo size */
+    width: auto;
     display: block;
 }
 
-header .logo img {
-    display: block;
-    max-height: 65px;      /* controls logo size */
-    width: auto;
-}
 
 /* Align logo vertically with menu */
 header .logo {
@@ -414,12 +419,31 @@ header .logo {
 }
 
 /* Sticky header logo */
+
+
 header.header-fixed .logo {
-    height: 50px;
+    height: 60px;
 }
 
 header.header-fixed .logo img {
-    max-height: 20px;
+    max-height: 40px;
+}
+
+header {
+    z-index: 1000;
+}
+
+header .search-box {
+    position: relative;
+    z-index: 999;
+}
+
+header .mainmenu-container ul li {
+    line-height: 80px;
+}
+
+header.header-fixed .mainmenu-container ul li {
+    line-height: 60px;
 }
 
 /**
