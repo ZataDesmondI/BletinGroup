@@ -307,7 +307,7 @@ header .mainmenu-container ul li a {
 }
 header .mainmenu-container > ul > li.current > a,
 header .mainmenu-container ul li a:hover {
-    color: #F69C00;
+    color: #FFFFFF;
 }
 header .mainmenu-container ul li a:before {
     height: 4px;
