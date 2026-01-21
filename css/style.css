@@ -307,7 +307,7 @@ header .mainmenu-container ul li a {
 }
 header .mainmenu-container > ul > li.current > a,
 header .mainmenu-container ul li a:hover {
-    color: #F69C00;
+    color: #FFFFFF;
 }
 header .mainmenu-container ul li a:before {
     height: 4px;
@@ -392,6 +392,37 @@ header.header-fixed .mainmenu-container ul li {
 header.header-fixed .logo {
     margin: 5px 0;
 }
+
+header .logo {
+  margin: 20px 0;
+  line-height: 105px;
+}
+
+header.header-fixed .logo {
+  margin: 5px 0;
+  line-height: 75px;
+}
+
+header .logo .logo-text {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #0a58ca;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-decoration: none;
+}
+
+header .logo .logo-text span {
+  color: #515050;
+}
+
+header.header-fixed .logo .logo-text {
+  font-size: 20px;
+}
+
+
+
 /**
 * Navigation Dropdown Styles.
 **/
